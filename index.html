@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Text</title>
+</head>
+<body>
+
+
+    <div id="text">
+
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        var i=0,text;
+        text = "My Love Programmin"
+        
+
+        function typing() {
+            if(i<text.length){
+                document.getElementById("text").innerHTML += text.charAt(i);
+                i++
+                setTimeout(typing,50);
+            }
+        }
+        typing();
+
+
+    </script>
+
+
+
+</body>
+</html>
